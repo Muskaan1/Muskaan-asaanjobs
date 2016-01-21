@@ -1,0 +1,20 @@
+3) Closest to zero 									    20 Marks
+
+This problem is also called minimum absolute sum pair. You are given an array of integers, containing both +ve and -ve numbers. You need to find the two elements such that their sum is closest to zero. eg. Array [15, 5, -20, 30, -45] Output should be 15, -20.
+
+Note: We want the sum to be closest to zero not minimum. The minimum in the above example would be (-20, -45), but that is incorrect.
+
+
+#include<iostream.h>
+#include<conio.h>
+int main()
+{
+int arr[10],n,i;
+cin>>n;
+for( i=0;i<10;i++)
+{
+a=n+arr[i];
+if(a<=0 && a>arr[i])
+cout<<a;
+}
+}
